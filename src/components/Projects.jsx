@@ -9,7 +9,7 @@ export function Projects() {
       title: "SkillCheckr - MCQ Practice & Tracker",
       description:
         "A full-stack MERN app that allows users to take categorized quizzes, track performance, and manage accounts through secure authentication.",
-      image: "/quizz.png",
+      image: "/portfolio/quizz.png",
       technologies: ["React", "Node.js", "Express.js", "MongoDB", "JWT", "Tailwind CSS"],
       features: [
         "Category-wise MCQ Quizzes",
