@@ -34,22 +34,22 @@ export function About() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <p className="text-lg text-muted-foreground mb-6">
-                I'm a passionate full-stack developer with over 3 years of experience creating digital solutions that
-                make a difference. My journey in tech started with a curiosity about how things work, and it has evolved
-                into a career dedicated to building exceptional user experiences.
+              Hey 👋, I'm a Computer Science and Engineering student at G.L. Bajaj Institute of Technology and Management. I'm also a Full Stack Developer passionate about building modern, user-friendly web applications using the MERN stack.
               </p>
               <p className="text-lg text-muted-foreground mb-6">
-                I specialize in modern web technologies including React, Next.js, Node.js, and various databases. I'm
-                always eager to learn new technologies and take on challenging projects that push the boundaries of
-                what's possible.
+                Solving 400+ coding problems solved on platforms like LeetCode and GeeksforGeeks, I thrive on solving challenging problems and continuously improving my skills. I’ve built real-time and full-stack projects like Drawly, a collaborative whiteboard, and SkillCheckr, a quiz and progress tracking app with secure authentication.
               </p>
               <p className="text-lg text-muted-foreground">
-                When I'm not coding, you can find me exploring new design trends, contributing to open-source projects,
-                or sharing knowledge with the developer community.
+               I enjoy working on real-world projects, participating in hackathons, and writing clean, scalable code. My goal is to create impactful digital experiences and continuously grow as a developer.
               </p>
             </div>
             <div>
-              <img src="/placeholder.svg?height=400&width=400" alt="About me" className="rounded-lg shadow-lg w-full" />
+             <img
+          src="/photo.jpeg"
+         alt="About me"
+          className="rounded-lg shadow-lg h-81 w-auto mx-auto object-cover"
+         />
+
             </div>
           </div>
 

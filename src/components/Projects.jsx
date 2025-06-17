@@ -1,59 +1,97 @@
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card"
 import { Badge } from "./ui/badge"
 import { Button } from "./ui/button"
-import { ExternalLink, Github, Eye } from "lucide-react"
+import { ExternalLink, Github } from "lucide-react"
 
 export function Projects() {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "SkillCheckr - MCQ Practice & Tracker",
       description:
-        "A full-stack e-commerce solution with user authentication, payment processing, and admin dashboard. Built with modern technologies for optimal performance.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["React", "Node.js", "Stripe", "PostgreSQL", "Tailwind CSS"],
-      features: ["User Authentication", "Payment Processing", "Admin Dashboard", "Responsive Design"],
-      liveUrl: "#",
-      githubUrl: "#",
+        "A full-stack MERN app that allows users to take categorized quizzes, track performance, and manage accounts through secure authentication.",
+      image: "/quizz.png",
+      technologies: ["React", "Node.js", "Express.js", "MongoDB", "JWT", "Tailwind CSS"],
+      features: [
+        "Category-wise MCQ Quizzes",
+        "Performance Tracking",
+        "JWT Authentication",
+        "User Progress Dashboard",
+      ],
+      liveUrl: "https://skillcheckr.onrender.com/",
+      githubUrl: "https://github.com/aditya-xx00/SkillCheckr",
       featured: true,
     },
     {
-      title: "Task Management App",
+      title: "Drawly - Real-Time Collaborative Board",
       description:
-        "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["React", "Node.js", "Socket.io", "MongoDB", "Material-UI"],
-      features: ["Real-time Updates", "Drag & Drop", "Team Collaboration", "File Attachments"],
-      liveUrl: "#",
-      githubUrl: "#",
+        "A collaborative whiteboard enabling multiple users to draw live with different tools like pencil, rectangle, circle, rhombus, and arrow. It enables the users to share their strategies and ideas in real-time.",
+      image: "/drawing.png",
+      technologies: ["React", "Node.js", "Express.js", "Socket.IO", "Tailwind CSS"],
+      features: [
+        "Real-time Canvas Syncing",
+        "Multiple Drawing Tools",
+        "Room-based Access with IDs",
+        "Canvas Persistence",
+      ],
+      liveUrl: "https://drawly-1.onrender.com/",
+      githubUrl: "https://github.com/aditya-xx00/Drawly",
       featured: true,
     },
     {
-      title: "Weather Dashboard",
+      title: "Password Generator",
       description:
-        "A responsive weather application that provides current weather conditions and forecasts for multiple locations with beautiful visualizations.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["Vue.js", "Chart.js", "OpenWeather API", "CSS3"],
-      features: ["Multiple Locations", "Weather Forecasts", "Data Visualization", "Geolocation"],
-      liveUrl: "#",
-      githubUrl: "#",
+        "A simple yet powerful password generator that allows users to specify password length, include special characters, numbers, and copy to clipboard functionality.",
+      image: "/wassword.jpg",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      features: [
+        "Customizable Password Length",
+        "Include Special Characters and Numbers",
+        "Copy to Clipboard",
+        "Responsive UI",
+      ],
+      liveUrl: "https://aditya-xx00.github.io/password-generator/",
+      githubUrl: "https://github.com/aditya-xx00/password-generator",
       featured: false,
     },
     {
-      title: "Portfolio Website",
-      description:
-        "A modern, responsive portfolio website showcasing projects and skills with smooth animations and optimized performance.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["React", "Framer Motion", "Tailwind CSS", "Vite"],
-      features: ["Responsive Design", "Smooth Animations", "SEO Optimized", "Fast Loading"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false,
-    },
+  title: "Currency Converter",
+  description:
+    "A real-time currency converter allowing users to select different currencies and view accurate exchange rates using a live API.",
+  image: "/currency-converter.jpg", // Ensure this image exists in your public folder or replace it
+  technologies: ["HTML", "CSS", "JavaScript", "Exchange Rate API"],
+  features: [
+    "Real-time Exchange Rate Fetching",
+    "Multiple Currency Options",
+    "Bidirectional Conversion",
+    "Responsive UI",
+  ],
+  liveUrl: "https://aditya-xx00.github.io/currency-converter/", // Update if needed
+  githubUrl: "https://github.com/aditya-xx00/currency-converter", // Replace with actual repo
+  featured: false,
+ },
+ {
+  title: "Job Portal",
+  description:
+    "A comprehensive job portal enabling streamlined interaction between job seekers and employers with features like role-based access, job postings, application tracking, and more.",
+  image: "/jobportal.png", // Ensure this image exists in your public folder or replace with actual name
+  technologies: ["React", "Node.js", "Express.js", "MongoDB", "JWT", "Tailwind CSS", "Multer"],
+  features: [
+    "Role-based Authentication (Admin, Employer, Job Seeker)",
+    "Job Posting & Application Tracking",
+    "Resume Upload & Profile Management",
+    "Advanced Filtering & Search",
+    "Employer Dashboards & Messaging",
+    "Admin Tools for Moderation",
+  ],
+  liveUrl: "https://your-job-portal-url.com", // ← Replace with your actual live link
+  githubUrl: "https://github.com/aditya-xx00/Job-Portal", // ← Replace with actual repo
+  featured: false,
+},
   ]
 
-  const featuredProjects = projects.filter((project) => project.featured)
-  const otherProjects = projects.filter((project) => !project.featured)
-
+  const featuredProjects = projects.filter((p) => p.featured)
+  const otherProjects = projects.filter((p) => !p.featured)
+  
   return (
     <section id="projects" className="py-20">
       <div className="container mx-auto px-4">
@@ -115,43 +153,45 @@ export function Projects() {
             </div>
           </div>
 
-          {/* Other Projects */}
-          <div>
-            <h3 className="text-2xl font-semibold mb-8">Other Projects</h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              {otherProjects.map((project, index) => (
-                <Card key={index}>
-                  <CardHeader>
-                    <CardTitle className="flex items-center justify-between">
-                      {project.title}
-                      <div className="flex space-x-2">
-                        <Button variant="ghost" size="icon" asChild>
-                          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                            <Eye className="h-4 w-4" />
-                          </a>
-                        </Button>
-                        <Button variant="ghost" size="icon" asChild>
-                          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                            <Github className="h-4 w-4" />
-                          </a>
-                        </Button>
+          {/* Other Projects (Simplified) */}
+          {otherProjects.length > 0 && (
+            <div>
+              <h3 className="text-2xl font-semibold mb-8">Other Projects</h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                {otherProjects.map((project, index) => (
+                  <Card key={index}>
+                    <CardHeader>
+                      <CardTitle className="flex items-center justify-between">
+                        {project.title}
+                        <div className="flex space-x-2">
+                          <Button variant="ghost" size="icon" asChild>
+                            <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                              <ExternalLink className="h-4 w-4" />
+                            </a>
+                          </Button>
+                          <Button variant="ghost" size="icon" asChild>
+                            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                              <Github className="h-4 w-4" />
+                            </a>
+                          </Button>
+                        </div>
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-3">
+                      <p className="text-muted-foreground">{project.description}</p>
+                      <div className="flex flex-wrap gap-2">
+                        {project.technologies.map((tech, i) => (
+                          <Badge key={i} variant="secondary">
+                            {tech}
+                          </Badge>
+                        ))}
                       </div>
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <p className="text-muted-foreground text-sm">{project.description}</p>
-                    <div className="flex flex-wrap gap-2">
-                      {project.technologies.map((tech, i) => (
-                        <Badge key={i} variant="outline" className="text-xs">
-                          {tech}
-                        </Badge>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     </section>

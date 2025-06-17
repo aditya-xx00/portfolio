@@ -35,19 +35,19 @@ export function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "your.email@example.com",
-      href: "mailto:your.email@example.com",
+      value: "imadityakushwaha22@gmail.com",
+      href: "mailto:imadityakushwaha22@gmail.com",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      value: "+91 8441834512",
+      href: "tel:8441834512",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Greater Noida, India",
       href: "#",
     },
   ]
@@ -56,17 +56,17 @@ export function Contact() {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/yourusername",
+      href: "https://github.com/Aditya-xx00",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/yourusername",
+      href: "https://linkedin.com/in/aditya-xx00",
     },
     {
       icon: Twitter,
       label: "Twitter",
-      href: "https://twitter.com/yourusername",
+      href: "https://twitter.com/Aditya_xx00",
     },
   ]
 
@@ -125,7 +125,7 @@ export function Contact() {
                 <CardTitle>Send Message</CardTitle>
               </CardHeader>
               <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form action="https://formspree.io/f/xjkrogdg" method="POST" className="space-y-6">
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="name">Name</Label>
@@ -174,7 +174,7 @@ export function Contact() {
 
       {/* Footer */}
       <footer className="mt-20 pt-8 border-t text-center text-muted-foreground">
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; Designed and Coded by Aditya Kushwaha</p>
       </footer>
     </section>
   )

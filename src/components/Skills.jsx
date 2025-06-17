@@ -6,64 +6,49 @@ import { Code, Database, Palette, Server } from "lucide-react"
 export function Skills() {
   const skillCategories = [
     {
-      title: "Frontend Development",
+      title: "Web Development",
       icon: Code,
       skills: [
         { name: "React/Vite", level: 90 },
         { name: "JavaScript", level: 85 },
         { name: "Tailwind CSS", level: 90 },
-        { name: "Vue.js", level: 75 },
         { name: "HTML/CSS", level: 95 },
-      ],
-    },
-    {
-      title: "Backend Development",
-      icon: Server,
-      skills: [
-        { name: "Node.js", level: 85 },
+         { name: "Node.js", level: 85 },
         { name: "Express.js", level: 80 },
-        { name: "Python", level: 75 },
-        { name: "REST APIs", level: 90 },
-        { name: "GraphQL", level: 70 },
-      ],
-    },
-    {
-      title: "Database & Cloud",
-      icon: Database,
-      skills: [
-        { name: "PostgreSQL", level: 80 },
-        { name: "MongoDB", level: 85 },
-        { name: "AWS", level: 75 },
-        { name: "Firebase", level: 80 },
-        { name: "Docker", level: 70 },
       ],
     },
     {
       title: "Design & Tools",
       icon: Palette,
       skills: [
-        { name: "Figma", level: 85 },
         { name: "Git/GitHub", level: 90 },
         { name: "VS Code", level: 95 },
         { name: "Photoshop", level: 70 },
         { name: "Responsive Design", level: 90 },
+         { name: "Socket.IO", level: 75 },
+      ],
+    },
+      {
+      title: "Database",
+      icon: Database,
+      skills: [
+         { name: "MongoDB", level: 85 },
+          { name: "SQL", level: 85 }
       ],
     },
   ]
 
   const additionalSkills = [
-    "Agile/Scrum",
-    "Test-Driven Development",
-    "CI/CD",
+    "Test-Driven Development",,
     "Performance Optimization",
-    "SEO",
-    "Accessibility",
+    "RESTful APIs",
     "Code Review",
     "Technical Writing",
     "Team Leadership",
     "Problem Solving",
     "Communication",
     "Project Management",
+    "Agile/Scrum",
   ]
 
   return (
