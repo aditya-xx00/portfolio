@@ -18,7 +18,7 @@ export function Hero() {
         <div className="max-w-4xl mx-auto">
           <div className="mb-8">
             <img
-              src="/profile.jpeg?height=200&width=200"
+              src="/portfolio/profile.jpeg?height=200&width=200"
               alt="Profile"
               className="w-48 h-48 rounded-full mx-auto mb-8 object-cover border-4 border-primary/20"
             />

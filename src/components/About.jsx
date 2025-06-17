@@ -45,7 +45,7 @@ export function About() {
             </div>
             <div>
              <img
-          src="/photo.jpeg"
+          src="/portfolio/photo.jpeg"
          alt="About me"
           className="rounded-lg shadow-lg h-81 w-auto mx-auto object-cover"
          />
