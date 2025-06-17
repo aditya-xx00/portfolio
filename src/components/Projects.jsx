@@ -25,7 +25,7 @@ export function Projects() {
       title: "Drawly - Real-Time Collaborative Board",
       description:
         "A collaborative whiteboard enabling multiple users to draw live with different tools like pencil, rectangle, circle, rhombus, and arrow. It enables the users to share their strategies and ideas in real-time.",
-      image: "/drawing.png",
+      image: "image: `${import.meta.env.BASE_URL}drawing.png`",
       technologies: ["React", "Node.js", "Express.js", "Socket.IO", "Tailwind CSS"],
       features: [
         "Real-time Canvas Syncing",
