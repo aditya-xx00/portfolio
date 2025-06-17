@@ -1,6 +1,6 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card"
+import { Badge } from "./ui/badge"
+import { Button } from "./ui/button"
 import { ExternalLink, Github, Eye } from "lucide-react"
 
 export function Projects() {
@@ -10,7 +10,7 @@ export function Projects() {
       description:
         "A full-stack e-commerce solution with user authentication, payment processing, and admin dashboard. Built with modern technologies for optimal performance.",
       image: "/placeholder.svg?height=300&width=500",
-      technologies: ["Next.js", "TypeScript", "Stripe", "PostgreSQL", "Tailwind CSS"],
+      technologies: ["React", "Node.js", "Stripe", "PostgreSQL", "Tailwind CSS"],
       features: ["User Authentication", "Payment Processing", "Admin Dashboard", "Responsive Design"],
       liveUrl: "#",
       githubUrl: "#",
@@ -43,7 +43,7 @@ export function Projects() {
       description:
         "A modern, responsive portfolio website showcasing projects and skills with smooth animations and optimized performance.",
       image: "/placeholder.svg?height=300&width=500",
-      technologies: ["Next.js", "Framer Motion", "Tailwind CSS", "Vercel"],
+      technologies: ["React", "Framer Motion", "Tailwind CSS", "Vite"],
       features: ["Responsive Design", "Smooth Animations", "SEO Optimized", "Fast Loading"],
       liveUrl: "#",
       githubUrl: "#",

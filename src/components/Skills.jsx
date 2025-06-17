@@ -1,6 +1,6 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Progress } from "@/components/ui/progress"
-import { Badge } from "@/components/ui/badge"
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card"
+import { Progress } from "./ui/progress"
+import { Badge } from "./ui/badge"
 import { Code, Database, Palette, Server } from "lucide-react"
 
 export function Skills() {
@@ -9,8 +9,8 @@ export function Skills() {
       title: "Frontend Development",
       icon: Code,
       skills: [
-        { name: "React/Next.js", level: 90 },
-        { name: "TypeScript", level: 85 },
+        { name: "React/Vite", level: 90 },
+        { name: "JavaScript", level: 85 },
         { name: "Tailwind CSS", level: 90 },
         { name: "Vue.js", level: 75 },
         { name: "HTML/CSS", level: 95 },

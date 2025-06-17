@@ -1,4 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent } from "./ui/card"
 import { Code, Palette, Zap, Users } from "lucide-react"
 
 export function About() {
