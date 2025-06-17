@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react"
 import { Button } from "./ui/button"
 import { Menu, X } from "lucide-react"
+import { ThemeToggle } from "./ThemeToggle";
+
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -48,7 +50,7 @@ export function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="font-bold text-xl">Portfolio</div>
-
+          <ThemeToggle />
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             {navItems.map((item) => (
