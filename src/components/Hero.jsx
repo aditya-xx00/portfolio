@@ -40,7 +40,7 @@ export function Hero() {
     Get In Touch
   </Button>
 </a>
-           <a href="/portfolio/resume.pdf" download>
+           <a href="https://drive.google.com/file/d/1I4BESapRC3E2qxLn5_D3A9ez-USn6p05/view?usp=drive_link" download>
   <Button variant="outline" size="lg" className="w-full sm:w-auto">
     <Download className="mr-2 h-4 w-4" />
     Download Resume
