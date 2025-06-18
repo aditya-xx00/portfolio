@@ -9,8 +9,8 @@ export function Skills() {
       title: "Web Development",
       icon: Code,
       skills: [
-        { name: "React/Vite", level: 90 },
-        { name: "JavaScript", level: 85 },
+        { name: "React/Vite", level: 85 },
+        { name: "JavaScript", level: 90 },
         { name: "Tailwind CSS", level: 90 },
         { name: "HTML/CSS", level: 95 },
          { name: "Node.js", level: 85 },
@@ -25,15 +25,16 @@ export function Skills() {
         { name: "VS Code", level: 95 },
         { name: "Photoshop", level: 70 },
         { name: "Responsive Design", level: 90 },
-         { name: "Socket.IO", level: 75 },
+       { name: "Socket.IO", level: 85 },
+       { name: "Postman", level: 75 },
       ],
     },
       {
       title: "Database",
       icon: Database,
       skills: [
-         { name: "MongoDB", level: 85 },
-          { name: "SQL", level: 85 }
+        { name: "SQL", level: 90},
+         { name: "MongoDB", level: 85 }   
       ],
     },
   ]
