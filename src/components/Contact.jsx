@@ -61,7 +61,7 @@ export function Contact() {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/aditya-xx00",
+      href: "https://www.linkedin.com/in/aditya-kushwaha-86b047285/",
     },
     {
       icon: Twitter,
